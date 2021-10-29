@@ -47,7 +47,7 @@ describe('c-wire-l-d-s', () => {
         expect(ownerElement.textContent).toBe(
           'Owner: ' + mockGetRecord.fields.Owner.displayValue
         );
-      });
+      }); // just added the line
     });
   });
 });
