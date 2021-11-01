@@ -1,0 +1,11 @@
+<lightning-card title="Wire Lightning Data Service" icon-name="custom:custom108">
+    <template if:true={account.data}>
+      <p class="accountName">Account Name: {name}</p>
+      <p class="accountIndustry">Industry: {industry}</p>
+      <p class="accountPhone">Phone: {phone}</p>
+      <p class="accountOwner">Owner: {owner}</p>
+    </template>
+    <template if:true={account.error}>  // code modified here
+      <p>No account found.</p>   // Print names, phone etc.
+    </template>
+  </lightning-card>
