@@ -5,7 +5,7 @@
       <p class="accountPhone">Phone: {phone}</p>
       <p class="accountOwner">Owner: {owner}</p>
     </template>
-    <template if:true={account.error}>
+    <template if:true={account.error}>  // code modified here
       <p>No account found.</p>
     </template>
   </lightning-card>
